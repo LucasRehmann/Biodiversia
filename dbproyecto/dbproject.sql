@@ -1,0 +1,36 @@
+USE dbproject;
+
+CREATE TABLE especies (
+	id INT (10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR (50) DEFAULT NULL,
+    alimentacion VARCHAR (200)  DEFAULT NULL, 
+    peligro VARCHAR (200) DEFAULT NULL, 
+    depredadores VARCHAR(200) DEFAULT NULL,
+    movilidad VARCHAR (200) DEFAULT NULL, 
+    id_habitat INT (10) DEFAULT NULL 
+    
+    
+);
+
+CREATE TABLE habitat (
+	id INT (10) PRIMARY KEY NOT NULL AUTO_INCREMENT, 
+    altura FLOAT(15) DEFAULT NULL, 
+    humedad FLOAT (4) DEFAULT NULL, 
+    temperatura FLOAT (4) DEFAULT NULL,
+    area FLOAT (15) DEFAULT NULL
+);
+
+CREATE TABLE GIS(
+	id INT (10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    temp FLOAT (4) DEFAULT NULL, 
+    humedad FLOAT (4) DEFAULT NULL,
+    altura FLOAT(15) DEFAULT NULL
+
+);
+
+ALTER TABLE especies
+DROP COLUMN id_habitat;
+
+ALTER TABLE habitat ADD id_especies INT(10) DEFAULT NULL;
+
+DESCRIBE habitat;
