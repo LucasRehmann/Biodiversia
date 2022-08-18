@@ -1,8 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
 #map{
 	width: 100%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
+	display: flex;
 }
 
 .marker{
@@ -24,4 +32,16 @@
 	background-size: cover;
 	width: 15px;
 	height: 15px;
+}
+
+.btn
+{
+	padding: -59px -29px;
+	background: #fff;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	font-size: 22px;
+	font-weight: 500;
+	border-radius: 30px;
 }

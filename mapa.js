@@ -37,3 +37,8 @@ let markerc = new mapboxgl.Marker(elementc)
 	lat:-49
 })
 .addTo(map)
+
+let btn = document.createElement('div')
+btn.className = 'boton'
+
+let boton = new mapboxgl.
