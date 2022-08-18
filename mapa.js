@@ -38,7 +38,8 @@ let markerc = new mapboxgl.Marker(elementc)
 })
 .addTo(map)
 
-let btn = document.createElement('div')
-btn.className = 'boton'
-
-let boton = new mapboxgl.
+//let btn = document.getElementByClassName('btn')[0];
+//btn.addEventListener("click", 89 => {
+//})
+//btn.className = 'boton'
+//let boton =
