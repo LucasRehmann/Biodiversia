@@ -38,6 +38,42 @@ let markerc = new mapboxgl.Marker(elementc)
 })
 .addTo(map)
 
+const openModalButtons = document.querySelectorAll('data-model-target')
+const closeModalButtons = document.querySelectorAll('data-close-button')
+const overlay = document.getElementById('overlay')
+
+openModalButtons.forEach(button =>{
+	button.addEventListener('click', () => {
+		const modal = document.querySelector(button.dataset.modalTarget)
+		openModal(modal)
+	})
+})
+
+closeModalButtons.forEach(button =>{
+	button.addEventListener('click', () => {
+		const modal = button.closest('.modal')
+		closeModal(modal)
+	})
+})
+
+function openModal(modal){
+	if(modal == null) return
+	modal.classList.add('active')
+	overlay.classList.add('active')
+}
+
+overlay.addEventListener('click', () => {
+	const modals = document.querySelectorAll('.modal-active')
+	modal.forEach(modal => {
+		closeModal(modal)
+	})
+})
+
+function closeModal(modal){
+	if(modal == null) return
+	modal.classList.remove('active')
+	overlay.classList.remove('active')
+}
 //let btn = document.getElementByClassName('btn')[0];
 //btn.addEventListener("click", 89 => {
 //})
