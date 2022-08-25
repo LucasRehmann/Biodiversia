@@ -262,10 +262,11 @@ footer .container{
     background: #fff;
     border-radius: 12px;
     border-color: rgba(0,0,0,0.7);
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;        
-    transform: scale(0.1);
+    position: flex;
+    top: 0;
+    left: 100%;
+    text-align: center;    
+    transform: translate(95%, -130%) scale(0.1);
     color: #333;    
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     padding: 0 30px 30px;
