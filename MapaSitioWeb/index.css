@@ -1,4 +1,4 @@
-}*{
+*{
     box-sizing: border-box;
 }
 
@@ -258,26 +258,54 @@ footer .container{
 }
 
 .popup{
-    width: 400px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #333;    
+    /* visibility: hidden; */
+    transition: transform .4s, visibility .4s;
+}
+.popup>div {
+    padding: 200px 100px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     background: #fff;
     border-radius: 12px;
     border-color: rgba(0,0,0,0.7);
-    position: flex;
-    top: 0;
-    left: 100%;
-    text-align: center;    
-    transform: translate(95%, -130%) scale(0.1);
-    color: #333;    
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    padding: 0 30px 30px;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;  
+    width: 400px;
+    height: 200px;
 }
 
 .open-popup{
     visibility: visible;
-    top: 50%;
-    transform: translate(95%, -130%) scale(1);
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    padding: 20px 12px;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.close-popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    padding: 20px 12px;
+    transform: scale(0);
+    transition: transform 0.4s, top 0.4s;
 }
 
 .popup h2{

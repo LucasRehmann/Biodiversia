@@ -53,10 +53,12 @@
                     <button class="see-more">+ Info</button>
                 </div>
             </div>
-            <div class="popup" id="popup">
-                <h2>Animal 1</h2>
-                <p>ANIMALES animales animales animales</p>
-                <button type="button" onclick="closePopup()">CANCELAR</button>
+            <div onclick="closePopup()" class="popup" id="popup">
+                <div >
+                    <h2>Animal 1</h2>
+                    <p>ANIMALES animales animales animales</p>
+                    <button type="button" onclick="closePopup()">CANCELAR</button>
+                </div>
             </div>           
         </div>
     </section>
@@ -66,10 +68,12 @@
 
         function openPopup(){
             popup.classList.add("open-popup")
+            popup.classList.remove("close-popup")
         }
 
         function closePopup(){
-            popup.classList.add("open-popup")
+            popup.classList.add("close-popup")
+            popup.classList.remove("open-popup")
         }
     </script>
 
