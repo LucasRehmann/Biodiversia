@@ -13,6 +13,11 @@ const Habitats = database.define("Habitats", {
     type: DataTypes.STRING,
   },
 
+  altura: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  
   temperatura: {
     type: DataTypes.INTEGER,
     allowNull: true,

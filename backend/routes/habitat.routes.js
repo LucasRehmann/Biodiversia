@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { Habitats } from '../models/habitats';
+import  Habitats  from '../models/habitats.js';
 const router = Router();
 
 
-router.get('/:id',  (req,res) => {
+router.get('/:id', async (req,res) => {
     const {id} = req.params;
      try {
       const habitat = await Habitats.findOne({
