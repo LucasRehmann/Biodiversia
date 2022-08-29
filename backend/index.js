@@ -2,6 +2,7 @@ import app from "./app.js";
 import database from "./config/database.js";
 
 import './models/especies.js';
+import './models/habitats.js';
 
 async function main() {
     try {
