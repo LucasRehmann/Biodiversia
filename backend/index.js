@@ -1,8 +1,10 @@
 import app from "./app.js";
 import database from "./config/database.js";
 
-import './models/especies.js';
-import './models/habitats.js';
+// import './models/especies.js';
+// import './models/habitats.js';
+// import './models/habitat_especies.js';
+
 
 async function main() {
     try {
@@ -11,7 +13,7 @@ async function main() {
     } catch (error) {
         console.error('Unable to connect to the database:', error);
     }
-    await database.sync({alter: true});
+    await database.sync({force: false});
     app.listen(app.get('port'));
     console.log("Server on port 3000");
 }

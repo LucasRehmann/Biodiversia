@@ -38,4 +38,6 @@ const Especies = database.define("Especies", {
   timestamps: false
 });
 
+
+
 export default Especies;

@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize";
 import database from "../config/database.js"; 
 const { DataTypes } = Sequelize;
 
-const Habitats = database.define("Habitats_especies", {
+const Habitats = database.define("Habitats", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,

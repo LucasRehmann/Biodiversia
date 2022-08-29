@@ -1,23 +1,21 @@
 import { Router } from "express";
-import mysqlConnection from "mysql2";
+import { Especies } from '../models/especies.js';
 
 const router = Router();
 
 router.get('/:nombre',  (req,res) => {
     const {nombre} = req.params;
-    console.log (nombre);
-
-    mysqlConnection.query(
-      "SELECT * FROM especies WHERE nombre = ?",
-      [nombre],
-      (err, rows, fields) => {
-        if (!err) {
-          res.json(rows);
-        } else {
-          console.log(err);
-        }
-      }
-    );
+     try {
+      const especie = await Especies.findOne({
+        where: {nombre}
+        //attributes: ['nombre'] //para traer un campo especifico
+      })
+      res.json(especie);
+    } catch (error) {
+      return res.status(500).json({message:error.message});
+    }
+    
+    
 });
 
 export default router;
