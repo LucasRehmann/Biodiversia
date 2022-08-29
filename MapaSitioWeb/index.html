@@ -10,11 +10,13 @@
 <body>
     <header>
         <div class="container">
-            <p class="logo">Mapa</p>
+            <p>
+                <a href="#mapa">Mapa</a>
+            </p>
             <nav>
                 <a href="#lugares">Lugares</a>
                 <a href="#especies">Especies</a>
-                <a href="#informacion">Información</a>
+                <a href="#informacion">Información</a>                
             </nav>
         </div>
     </header>
@@ -37,19 +39,19 @@
         <div class="container">
             <h2>Especies</h2>
             <div class="animales">
-                <div class="carta1">
+                <div class="carta">
                     <h3>Especie1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur labore laboriosam fugiat distinctio sapiente possimus excepturi. Eligendi omnis fugiat doloremque, at facere repellendus ducimus suscipit obcaecati, neque, eaque unde eos!</p>
+                    <p>Lorem ipsum dolor sit, amet consugiat distinctios excepturi. Eligendi omnis fugiat doloremque, at facere repellendus ducimus suscipit obcaecati, neque, eaque unde eos!</p>
                     <button class="see-more" onclick="openPopup()">+ Info</button>
                 </div>
-                <div class="carta2">
+                <div class="carta">
                     <h3>Especie2</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur labore laboriosam fugiat distinctio sapiente possimus excepturi. Eligendi omnis fugiat doloremque, at facere repellendus ducimus suscipit obcaecati, neque, eaque unde eos!</p>
+                    <p>Lorem ipsum dolor sit,  distinctio sapiente possimus excepturi. Eligendi omnis fugiat doloremque, at facere repellendus ducimus suscipit obcaecati, neque, eaque unde eos!</p>
                     <button class="see-more">+ Info</button>
                 </div>
-                <div class="carta3">
+                <div class="carta">
                     <h3>Especie3</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur labore laboriosam fugiat distinctio sapiente possimus excepturi. Eligendi omnis fugiat doloremque, at facere repellendus ducimus suscipit obcaecati, neque, eaque unde eos!</p>
+                    <p>Lorem ipsum dolor sit, ae laboriosam fugiat distinctio sapepturi. Eligendi omnis fugiat doloremque, at facere repellendus ducimus suscipit obcaecati, neque, eaque unde eos!</p>
                     <button class="see-more">+ Info</button>
                 </div>
             </div>
@@ -82,6 +84,12 @@
             <h1><span class="color-acento">Informacion Importante</span></h1>
             <p>La información es <span class="italica">relativa</span> y debe ser tomada en cuenta como <span class="italica">estadística</span> y no como una verdad absoluta.</p>
         </div>
+    </section>
+
+    <section id="mapa">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>	
+        <div id='map' class="container"></div>	
+	    <script type="text/javascript" src='mapa.js'></script>		
     </section>
 
     <section id="final">

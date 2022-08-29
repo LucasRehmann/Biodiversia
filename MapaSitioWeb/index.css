@@ -14,7 +14,17 @@ body{
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
-p{font-size: 1.25em;}
+p{
+    color: blueviolet;
+    font-size: 1.25em;
+    font-style: bold;    
+    cursor: pointer;  
+}
+
+p:hover{
+    color:rgba(101, 33, 165);  
+}
+
 ul{list-style: none;}
 
 button{
@@ -145,10 +155,12 @@ header a:hover{
 #especies .carta{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    padding: 40px;
+    margin: 10px;
     border-radius: 15px;
-    min-height: 300px;
+    min-height: 150px;
+    max-height: 500px;
+    min-width: 60px;
 }
 
 .carta:first-child{
@@ -192,6 +204,13 @@ header a:hover{
 #informacion p{
     margin: 15px 0px;    
     font-size: 1.9em;    
+}
+
+#mapa .container{
+    text-align: center;
+    padding: 10px 12px;
+    min-height: 100vh;
+    max-width: 1400px;
 }
 
 #final{
@@ -269,7 +288,7 @@ footer .container{
     top: 0;
     left: 0;
     color: #333;    
-    /* visibility: hidden; */
+    visibility: hidden;
     transition: transform .4s, visibility .4s;
 }
 .popup>div {
