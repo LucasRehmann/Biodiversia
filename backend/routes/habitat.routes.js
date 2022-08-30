@@ -3,7 +3,7 @@ import  Habitats  from '../models/habitats.js';
 const router = Router();
 
 
-router.get('/:id', async (req,res) => {
+router.get('/habitat/:id', async (req,res) => {
     const {id} = req.params;
      try {
       const habitat = await Habitats.findOne({
@@ -15,7 +15,8 @@ router.get('/:id', async (req,res) => {
       return res.status(500).json({message:error.message});
     }
     
-    
 });
+
+
 
 export default router;

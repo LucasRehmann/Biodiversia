@@ -1,9 +1,9 @@
 import app from "./app.js";
 import database from "./config/database.js";
 
-import './models/especies.js';
-import './models/habitats.js';
-import './models/habitat_especies.js';
+// import './models/especies.js';
+// import './models/habitats.js';
+// import './models/habitat_especies.js';
 
 
 async function main() {

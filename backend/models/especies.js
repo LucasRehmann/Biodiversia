@@ -11,6 +11,7 @@ const Especies = database.define("Especies", {
 
   nombre: {
     type: DataTypes.STRING,
+    allowNull: false,
   },
 
   alimentacion: {

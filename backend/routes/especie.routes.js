@@ -3,7 +3,7 @@ import  Especies  from '../models/especies.js';
 
 const router = Router();
 
-router.get('/:nombre', async (req,res) => {
+router.get('/especie/:nombre', async (req,res) => {
     const {nombre} = req.params;
      try {
       const especie = await Especies.findOne({
