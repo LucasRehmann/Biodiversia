@@ -13,7 +13,7 @@ const Area_afectada = database.define("Areas_afectadas", {
     type: DataTypes.STRING,
   },
 
-  ubicacion: {
+  coordenadas: {
     type: DataTypes.INTEGER,
   },
 
@@ -21,6 +21,25 @@ const Area_afectada = database.define("Areas_afectadas", {
     type: DataTypes.STRING,
     allowNull: true,
   },
+
+  altura: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  
+  temperatura: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+
+  humedad: {
+    type: DataTypes.INTEGER,
+  },
+
+  especie:{
+    type: DataTypes.STRING,
+    allowNull: true,
+  }
 
 
 }, {

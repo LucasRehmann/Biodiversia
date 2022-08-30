@@ -1,5 +1,6 @@
 import  Sequelize  from 'sequelize';
-import dbConfig from './config.json' assert {type: "json"};;
+import dbConfig from './config.js'
+
 
 const environment = dbConfig["development"];
 
