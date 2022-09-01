@@ -8,8 +8,6 @@ var map = new mapboxgl.Map({
 	zoom: 3.5
 });
 
-//CREAR LOS DIVS: CAMBIAR CREATE ELEMENT POR GETELEMENTBYCLASSNAME/ID Y CAMBIAR EL ADDEVENTLISTENER POR ONCLICK EN EL HTML
-
 let element = document.createElement('div')
 element.className = 'marker'
 

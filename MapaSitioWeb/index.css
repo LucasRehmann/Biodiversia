@@ -348,22 +348,21 @@ footer .container{
 }
 
 .marker{
-    
-	background-image: url('media/animalprueba.jpg');
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Circle_-_black_simple_fullpage.svg/1200px-Circle_-_black_simple_fullpage.svg.png');
 	background-size: cover;
 	width: 15px;
 	height: 15px;
 }
 
 .markerb{
-	background-image: url('media/animalprueba.jpg');
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Circle_-_black_simple_fullpage.svg/1200px-Circle_-_black_simple_fullpage.svg.png');
 	background-size: cover;
 	width: 15px;
 	height: 15px;
 }
 
 .markerc{
-	background-image: url('media/animalprueba.jpg');
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Circle_-_black_simple_fullpage.svg/1200px-Circle_-_black_simple_fullpage.svg.png');
 	background-size: cover;
 	width: 15px;
 	height: 15px;
