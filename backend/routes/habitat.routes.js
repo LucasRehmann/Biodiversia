@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { Habitats } from '../models/habitats';
+import  Habitats  from '../models/habitats.js';
 const router = Router();
 
 
-router.get('/:id',  (req,res) => {
+router.get('/habitat/:id', async (req,res) => {
     const {id} = req.params;
      try {
       const habitat = await Habitats.findOne({
@@ -15,7 +15,8 @@ router.get('/:id',  (req,res) => {
       return res.status(500).json({message:error.message});
     }
     
-    
 });
+
+
 
 export default router;

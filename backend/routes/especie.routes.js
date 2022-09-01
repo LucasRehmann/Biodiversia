@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { Especies } from '../models/especies.js';
+import  Especies  from '../models/especies.js';
 
 const router = Router();
 
-router.get('/:nombre',  (req,res) => {
+router.get('/especie/:nombre', async (req,res) => {
     const {nombre} = req.params;
      try {
       const especie = await Especies.findOne({

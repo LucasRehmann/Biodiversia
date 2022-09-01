@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize";
 import database from "../config/database.js"; 
 const { DataTypes } = Sequelize;
 
-const Habitats = database.define("Habitats", {
+const Area_afectada = database.define("Areas_afectadas", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -11,7 +11,15 @@ const Habitats = database.define("Habitats", {
 
   nombre: {
     type: DataTypes.STRING,
+  },
 
+  coordenadas: {
+    type: DataTypes.INTEGER,
+  },
+
+  causa: {
+    type: DataTypes.STRING,
+    allowNull: true,
   },
 
   altura: {
@@ -28,13 +36,16 @@ const Habitats = database.define("Habitats", {
     type: DataTypes.INTEGER,
   },
 
-  clima: {
+  especie:{
     type: DataTypes.STRING,
     allowNull: true,
-  },
+  }
+
 
 }, {
   timestamps: false
 });
 
-export default Habitats;
+
+
+export default Area_afectada;
