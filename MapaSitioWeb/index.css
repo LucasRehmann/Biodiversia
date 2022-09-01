@@ -346,3 +346,25 @@ footer .container{
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
+
+.marker{
+    
+	background-image: url('media/animalprueba.jpg');
+	background-size: cover;
+	width: 15px;
+	height: 15px;
+}
+
+.markerb{
+	background-image: url('media/animalprueba.jpg');
+	background-size: cover;
+	width: 15px;
+	height: 15px;
+}
+
+.markerc{
+	background-image: url('media/animalprueba.jpg');
+	background-size: cover;
+	width: 15px;
+	height: 15px;
+}
